@@ -6,7 +6,37 @@
         xmlns:local="clr-namespace:Incrementazione"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid RenderTransformOrigin="0.499,1.095">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="360.081"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Button Content="*0.001" HorizontalAlignment="Left" Height="25" Margin="205,0,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+        <Button Content="*0.01" HorizontalAlignment="Left" Height="25" Margin="350,0,0,310" VerticalAlignment="Bottom" Width="100" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="*0.1" HorizontalAlignment="Left" Height="25" Margin="510,0,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1" Click="Button_Click_1"/>
+        <Button Content="-0.01" HorizontalAlignment="Left" Height="25" Margin="10,90,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.3,4.4" Grid.Row="1" Click="Button_Click_10"/>
+        <Button Content="-0.1" HorizontalAlignment="Left" Height="25" Margin="130,90,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1" Click="Button_Click_9"/>
+        <Button Content="-1" HorizontalAlignment="Left" Height="25" Margin="250,90,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1" Click="Button_Click_8"/>
+        <Button Content="+0.01" HorizontalAlignment="Left" Height="25" Margin="62,90,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Grid.Row="1" Click="Button_Click_4"/>
+        <Button Content="+0.1" HorizontalAlignment="Left" Height="25" Margin="565,90,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2" Grid.Row="1" Click="Button_Click_3"/>
+        <Button Content="+1" HorizontalAlignment="Left" Height="25" Margin="455,90,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="2.65,4.2" Grid.Row="1" Click="Button_Click_2"/>
+        <Button Content="/0.1" HorizontalAlignment="Left" Height="25" Margin="205,190,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1" Click="Button_Click_7"/>
+        <Button Content="/0.01" HorizontalAlignment="Left" Height="25" Margin="350,190,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1" Click="Button_Click_6"/>
+        <Button Content="/0.001" HorizontalAlignment="Left" Height="25" Margin="510,190,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1" Click="Button_Click_5"/>
+        <TextBox Name="txtnumero" HorizontalAlignment="Left" Height="25" Margin="355,90,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="95" Grid.Row="1" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Calcola" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="326,248,0,0" Grid.Row="1" Height="41" Click="Button_Click"/>
+
     </Grid>
 </Window>
